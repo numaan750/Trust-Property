@@ -2,11 +2,12 @@
 
 import { FaQuoteLeft, FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
+
 const testimonials = [
   {
     name: "Jane Smith",
     review:
-      "I like doing business with this company. The last 2 employees I dealt with were very helpful. They followed through with my questions. They are very thorough & gave me complete explanations. They are also extremely courteous!",
+      "I like doing business with this company. The last 2 employees I dealt with were very helpful. ",
     source: "5/5 via Trustpilot",
   },
   {
@@ -25,68 +26,87 @@ const testimonials = [
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
-  // Auto-scroll every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      // Start fade-out
+      setFade(false);
+
+      setTimeout(() => {
+        // Change testimonial & fade-in
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+        setFade(true);
+      }, 500); // match the transition duration
     }, 5000);
 
-    // useEffect(() => {
-    //   const interval = setInterval(() => {
-    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    //   }, 5000);
-
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval);
   }, []);
 
   const prevTestimonial = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
+    setFade(false);
+    setTimeout(() => {
+      setCurrentIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + testimonials.length) % testimonials.length
+      );
+      setFade(true);
+    }, 300);
   };
 
   const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    setFade(false);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      setFade(true);
+    }, 300);
   };
 
   return (
     <>
       {/* Testimonials Section */}
-      <section className="py-16 px-4 md:px-20 bg-white">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8">
-          <div className="flex flex-col items-center md:items-start flex-shrink-0 text-center md:text-left">
-            <FaQuoteLeft className="text-4xl text-yellow-500 mb-4" />
-            <h2 className="text-xl md:text-3xl font-bold text-blue-900 max-w-xs md:max-w-sm">
+      <section className="py-20 px-6 md:px-20 bg-white">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Left Section */}
+          <div className="flex flex-col items-center md:items-start flex-shrink-0 text-center md:text-left md:pl-10">
+            <FaQuoteLeft className="text-5xl text-yellow-500 mb-6" />
+            <h2 className="text-2xl md:text-4xl font-bold text-blue-900 max-w-xs md:max-w-sm">
               What Our Owners And Residents Are Saying About Us
             </h2>
           </div>
 
-          <div className="flex flex-col bg-orange-50 rounded-2xl shadow-md p-4 md:p-6 w-full max-w-md flex-shrink-0">
-            <p className="text-gray-700 text-sm md:text-base mb-4">
-              {testimonials[currentIndex].review}
-            </p>
-            <div className="flex flex-col gap-1 mt-auto">
-              <p className="font-semibold text-gray-700">
-                {testimonials[currentIndex].name}
+          {/* Right Section */}
+          <div className="flex flex-col bg-orange-50 rounded-2xl shadow-md p-6 md:p-10 w-full max-w-md md:max-w-lg flex-shrink-0">
+            {/* Testimonial with fade effect */}
+            <div
+              className={`transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <p className="text-gray-700 text-base md:text-lg mb-6">
+                {testimonials[currentIndex].review}
               </p>
-              <div className="flex items-center text-sm text-blue-900 gap-1">
-                <FaStar className="text-yellow-400" />
-                {testimonials[currentIndex].source}
+              <div className="flex flex-col gap-1 mt-auto">
+                <p className="font-semibold text-gray-800 text-base md:text-lg">
+                  {testimonials[currentIndex].name}
+                </p>
+                <div className="flex items-center text-sm text-blue-900 gap-1">
+                  <FaStar className="text-yellow-400" />
+                  {testimonials[currentIndex].source}
+                </div>
               </div>
             </div>
 
-            <div className="flex justify-end gap-2 mt-4">
+            <div className="flex justify-end gap-3 mt-6">
               <button
                 onClick={prevTestimonial}
-                className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                className="p-3 rounded-full border border-gray-300 hover:bg-gray-200 transition"
               >
                 <FaArrowLeft />
               </button>
               <button
                 onClick={nextTestimonial}
-                className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                className="p-3 rounded-full border border-gray-300 hover:bg-gray-200 transition"
               >
                 <FaArrowRight />
               </button>
@@ -96,10 +116,10 @@ const Testimonials = () => {
       </section>
 
       {/* Call-to-action Section */}
-      <section className="py-10 px-4">
-        <div className="border-2 border-yellow-500 rounded-md px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 max-w-4xl mx-auto">
+      <section className="py-12 px-6">
+        <div className="border-2 border-yellow-500 rounded-md px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6 max-w-4xl mx-auto">
           <div className="text-center md:text-left">
-            <h2 className="text-xl md:text-3xl font-bold text-blue-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-blue-900">
               We Have $500 That Belongs In Your Pocket!
             </h2>
             <p className="text-gray-600 mt-2">
