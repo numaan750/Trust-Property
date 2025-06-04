@@ -39,7 +39,7 @@ const Navbar = () => {
               <Image
                 src={logo}
                 alt="Trust Property Keys"
-                className="h-12 w-12"
+                className="h-auto w-auto"
               />
             </div>
 
