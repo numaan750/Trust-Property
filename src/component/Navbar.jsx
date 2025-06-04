@@ -36,7 +36,7 @@ const Navbar = () => {
               <Image
                 src={logo}
                 alt="Trust Property Keys"
-                className="h-50 w"
+                className="h-24 w-auto"
               />
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-sm font-semibold mt-4 sm:mt-0 text-center sm:text-left">
