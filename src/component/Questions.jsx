@@ -22,7 +22,7 @@ const faqItems = [
 ];
 
 const Questions = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0); // default pehla open
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -35,23 +35,30 @@ const Questions = () => {
       </h1>
 
       {faqItems.map((item, index) => (
-        <div key={index} className="mb-4 border rounded overflow-hidden">
+        <div
+          key={index}
+          className="mb-4 border rounded overflow-hidden transition-all duration-300"
+        >
           <button
             className="w-full bg-gray-800 text-white text-left px-4 py-3 flex justify-between items-center focus:outline-none"
             onClick={() => toggleFAQ(index)}
           >
             <span>{item.question}</span>
-            {openIndex === index ? (
-              <RiArrowDropDownLine className="w-5 h-5" />
-            ) : (
-              <RiArrowDropDownLine className="w-5 h-5" />
-            )}
+            <RiArrowDropDownLine
+              className={`w-6 h-6 transform transition-transform duration-300 ${
+                openIndex === index ? "rotate-180" : ""
+              }`}
+            />
           </button>
-          {openIndex === index && (
-            <div className="bg-white px-4 py-3 text-gray-700">
-              {item.answer}
-            </div>
-          )}
+          <div
+            className={`px-4 overflow-hidden transition-all duration-500 ease-in-out ${
+              openIndex === index
+                ? "max-h-[1000px] py-3 opacity-100"
+                : "max-h-0 py-0 opacity-0"
+            }`}
+          >
+            <p className="text-gray-700">{item.answer}</p>
+          </div>
         </div>
       ))}
     </div>
