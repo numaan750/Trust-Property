@@ -14,8 +14,8 @@ const ForHomeowners = () => {
           hands-on approach or trust us to manage everything.
         </p>
       </div>
-      <div className="relative overflow-hidden px-4 md:px-20">
-        <div className="absolute left-0 right-0 top-0 h-[300px] md:h-[500px] bg-gray-800 z-0"></div>
+      <div className="relative">
+        <div className="z-0"></div>
 
         <svg
           className="absolute top-0 left-0 right-0 z-10"
@@ -33,51 +33,55 @@ const ForHomeowners = () => {
           ></path>
         </svg>
 
-        <div className="relative container mx-auto flex flex-col-reverse md:flex-row-reverse items-center justify-between py-10 gap-4 z-20">
-          <div className="space-y-6 max-w-lg">
-            <div className="bg-white shadow-lg p-4 rounded-lg">
-              <h2 className="text-gray-700 font-bold text-lg md:text-2xl">
-                CreditFlow
-              </h2>
-              <p className="text-gray-600 text-sm md:text-base mt-2">
-                Establish credit through effortless and adaptable rent transactions
-              </p>
+        <div className="bg-gray-900 h-[900px]">
+          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-60 mx-auto flex flex-col md:flex-row items-center justify-between py-70 gap-6 sm:gap-8 z-20">
+            <div className="flex justify-center mb-6 md:mb-0 w-full md:w-auto">
+              <Image
+                src={assets}
+                alt="Man holding a house"
+                width={400}
+                height={400}
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md"
+              />
             </div>
 
-            <div className="bg-white shadow-lg p-4 rounded-lg">
-              <h2 className="text-gray-700 font-bold text-lg md:text-2xl">
-                RENT A HOME
-              </h2>
-              <p className="text-gray-600 text-sm md:text-base mt-2">
-                Easy and straightforward homes for valued residents
-              </p>
+            <div className="space-y-4 max-w-lg w-full">
+              <div className="bg-white shadow-lg p-5 rounded-lg border-l-4 border-blue-900">
+                <h2 className="text-gray-700 font-bold text-xl md:text-3xl">
+                  CreditFlow
+                </h2>
+                <p className="text-gray-600 text-base md:text-lg mt-2">
+                  Establish credit through effortless and adaptable rent
+                  transactions
+                </p>
+              </div>
+
+              {/* Box 2 */}
+              <div className="bg-white shadow-lg p-6 rounded-lg border-l-4 border-blue-900">
+                <h2 className="text-gray-700 font-bold text-xl md:text-3xl">
+                  RENT A HOME
+                </h2>
+                <p className="text-gray-600 text-base md:text-lg mt-2">
+                  Easy and straightforward homes for valued residents
+                </p>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex flex-wrap gap-4 pt-4">
+                <a
+                  href="tel:5104590964"
+                  className="bg-yellow-500 text-white px-5 py-3 rounded-full text-base md:text-lg"
+                >
+                  (510) 459-0964
+                </a>
+                <a
+                  href="mailto:INFO@TRUSTPROPERTY.COM"
+                  className="bg-yellow-500 text-white px-5 py-3 rounded-full text-base md:text-lg"
+                >
+                  INFO@TRUSTPROPERTY.COM
+                </a>
+              </div>
             </div>
-
-            <div className="flex flex-wrap gap-3 pt-2">
-              <a
-                href="tel:5104590964"
-                className="bg-yellow-500 text-white px-4 py-2 rounded-full text-sm md:text-base"
-              >
-                (510) 459-0964
-              </a>
-              <a
-                href="mailto:INFO@TRUSTPROPERTY.COM"
-                className="bg-yellow-500 text-white px-4 py-2 rounded-full text-sm md:text-base"
-              >
-                INFO@TRUSTPROPERTY.COM
-              </a>
-            </div>
-          </div>
-
-
-          <div className="flex justify-center mb-6 md:mb-0 w-full md:w-auto">
-            <Image
-              src={assets}
-              alt="Man holding a house"
-              className="w-full max-w-xs md:max-w-sm rounded shadow-lg"
-              width={350}
-              height={350}
-            />
           </div>
         </div>
 

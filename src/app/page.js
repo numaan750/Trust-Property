@@ -67,7 +67,7 @@ const Page = () => {
       </main>
 
       {/* Stats Section */}
-      <div className="relative max-w-6xl mx-auto -mt-10 sm:-mt-20 z-20 px-4">
+      <div className="relative max-w-7xl mx-auto -mt-10 sm:-mt-20 z-20 px-4">
         <div className="bg-white shadow-md rounded-2xl flex flex-col md:flex-row justify-between items-center text-center overflow-hidden">
           <div className="flex-1 py-8">
             <h3 className="text-5xl font-bold text-gray-500">20</h3>
