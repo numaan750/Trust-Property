@@ -33,19 +33,19 @@ const ForHomeowners = () => {
           ></path>
         </svg>
 
-        <div className="bg-gray-900 h-[900px]">
-          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-60 mx-auto flex flex-col md:flex-row items-center justify-between py-70 gap-6 sm:gap-8 z-20">
+        <div className="bg-gray-900 h-[860px]">
+          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-50 mx-auto flex flex-col md:flex-row items-center justify-between xl:py-40 lg:py-40 sm:py-20 py-10 gap-6 sm:gap-8 z-20">
             <div className="flex justify-center mb-6 md:mb-0 w-full md:w-auto">
               <Image
                 src={assets}
                 alt="Man holding a house"
-                width={400}
-                height={400}
+                width={700}
+                height={700}
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md"
               />
             </div>
 
-            <div className="space-y-4 max-w-lg w-full">
+            <div className="space-y-4 h-50 max-w-lg w-full">
               <div className="bg-white shadow-lg p-5 rounded-lg border-l-4 border-blue-900">
                 <h2 className="text-gray-700 font-bold text-xl md:text-3xl">
                   CreditFlow

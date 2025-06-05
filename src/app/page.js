@@ -98,7 +98,7 @@ const Page = () => {
       </div>
 
       <section className="py-12 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-3 text-center">
           {/* Step 1 */}
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white font-semibold mb-4">

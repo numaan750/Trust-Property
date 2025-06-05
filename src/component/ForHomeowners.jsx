@@ -29,9 +29,9 @@ const ForHomeowners = () => {
           />
         </svg>
 
-        <div className=" bg-yellow-600 h-[900px] ">
-          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-50 mx-auto flex flex-col-reverse md:flex-row items-center justify-between py-50 gap-6 sm:gap-8 z-20">
-            <div className="space-y-4 max-w-lg w-full">
+        <div className=" bg-yellow-600 h-[895px] ">
+          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-50 mx-auto flex flex-col-reverse md:flex-row items-center justify-between xl:py-40 md:py-40 sm:py-20 py-10 gap-6 sm:gap-8 z-20">
+            <div className="space-y-4 max-w-lg w-full h-50">
               <div className="bg-white shadow-lg p-4 sm:p-6 rounded-lg border-l-4 border-blue-900">
                 <h2 className="text-gray-700 font-bold text-lg sm:text-xl md:text-2xl">
                   FOR SELF MANAGERS
@@ -74,8 +74,8 @@ const ForHomeowners = () => {
               <Image
                 src={assets}
                 alt="Man holding a house"
-                width={400}
-                height={400}
+                width={700}
+                height={700}
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md"
               />
             </div>

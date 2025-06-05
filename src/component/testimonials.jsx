@@ -65,7 +65,7 @@ const Testimonials = () => {
   return (
     <>
       {/* Testimonials Section */}
-      <section className="py-20 px-6 md:px-20 bg-white">
+      <section className="py-20 px-6 md:px-55 bg-white">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left Section */}
           <div className="flex flex-col items-center md:items-start flex-shrink-0 text-center md:text-left md:pl-10">
