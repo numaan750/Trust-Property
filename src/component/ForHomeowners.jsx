@@ -17,7 +17,7 @@ const ForHomeowners = () => {
       <div className="relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
         <div className="absolute left-0 right-0 top-0 h-[300px] sm:h-[400px] md:h-[500px] bg-yellow-400 z-0"></div>
 
-        <svg
+        {/* <svg
           className="absolute top-0 left-0 right-0 z-10"
           viewBox="0 0 283.5 23.3"
           fill="currentColor"
@@ -27,7 +27,7 @@ const ForHomeowners = () => {
             fill="#ffffff"
             d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7 s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7 c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z"
           />
-        </svg>
+        </svg> */}
 
         <div className="relative container mx-auto flex flex-col-reverse md:flex-row items-center justify-between py-10 gap-6 sm:gap-8 z-20">
           <div className="space-y-4 max-w-lg w-full">
@@ -78,7 +78,7 @@ const ForHomeowners = () => {
           </div>
         </div>
 
-        <svg
+        {/* <svg
           className="absolute bottom-0 left-0 right-0 z-10"
           viewBox="0 0 283.5 23.5"
           fill="currentColor"
@@ -89,7 +89,7 @@ const ForHomeowners = () => {
             fill="#ffffff"
             d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7 s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7 c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z"
           />
-        </svg>
+        </svg> */}
       </div>
     </>
   );
