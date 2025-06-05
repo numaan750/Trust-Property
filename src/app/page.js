@@ -66,7 +66,6 @@ const Page = () => {
         </div>
       </main>
 
-      {/* Stats Section */}
       <div className="relative max-w-7xl mx-auto -mt-10 sm:-mt-20 z-20 px-4">
         <div className="bg-white shadow-md rounded-2xl flex flex-col md:flex-row justify-between items-center text-center overflow-hidden">
           <div className="flex-1 py-8">
@@ -99,7 +98,6 @@ const Page = () => {
 
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-3 text-center">
-          {/* Step 1 */}
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white font-semibold mb-4">
               1
@@ -113,7 +111,6 @@ const Page = () => {
             </p>
           </div>
 
-          {/* Step 2 */}
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white font-semibold mb-4">
               2
@@ -127,7 +124,6 @@ const Page = () => {
             </p>
           </div>
 
-          {/* Step 3 */}
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white font-semibold mb-4">
               3
@@ -141,7 +137,6 @@ const Page = () => {
             </p>
           </div>
 
-          {/* Step 4 */}
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white font-semibold mb-4">
               4
