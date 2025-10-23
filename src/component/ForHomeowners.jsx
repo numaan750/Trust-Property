@@ -29,14 +29,16 @@ const ForHomeowners = () => {
           />
         </svg>
 
-        <div className=" bg-yellow-600 h-[895px] ">
-          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-50 mx-auto flex flex-col-reverse md:flex-row items-center justify-between xl:py-40 md:py-40 sm:py-20 py-10 gap-6 sm:gap-8 z-20">
-            <div className="space-y-4 max-w-lg w-full h-50">
+        <div className="bg-yellow-600 min-h-[895px]">
+          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-6 sm:gap-8 xl:py-40 md:py-40 sm:py-20 py-10">
+            {/* Text Content */}
+            <div className="space-y-4 max-w-lg w-full">
+              {/* Box 1 */}
               <div className="bg-white shadow-lg p-4 sm:p-6 rounded-lg border-l-4 border-blue-900">
-                <h2 className="text-gray-700 font-bold text-lg sm:text-xl md:text-2xl">
+                <h2 className="text-gray-700 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
                   FOR SELF MANAGERS
                 </h2>
-                <p className="text-gray-600 text-sm sm:text-base mt-2">
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg mt-2">
                   Rental home leasing & financial protection, for those that
                   like to manage things themselves.
                 </p>
@@ -44,10 +46,10 @@ const ForHomeowners = () => {
 
               {/* Box 2 */}
               <div className="bg-white shadow-lg p-4 sm:p-6 rounded-lg border-l-4 border-blue-900">
-                <h2 className="text-gray-700 font-bold text-lg sm:text-xl md:text-2xl">
+                <h2 className="text-gray-700 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
                   TrustProperty does eviction coverage
                 </h2>
-                <p className="text-gray-600 text-sm sm:text-base mt-2">
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg mt-2">
                   Enhance Your Revenue Stream with TrustProperty Localized
                   Property Management Solutions.
                 </p>
@@ -57,26 +59,27 @@ const ForHomeowners = () => {
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
                   href="tel:5104590964"
-                  className="bg-blue-900 text-white px-4 py-2 rounded-full text-sm md:text-base"
+                  className="bg-blue-900 text-white px-4 py-2 rounded-full text-sm sm:text-base md:text-lg"
                 >
                   (510) 459-0964
                 </a>
                 <a
                   href="mailto:INFO@TRUSTPROPERTY.COM"
-                  className="bg-blue-900 text-white px-4 py-2 rounded-full text-sm md:text-base"
+                  className="bg-blue-900 text-white px-4 py-2 rounded-full text-sm sm:text-base md:text-lg"
                 >
                   INFO@TRUSTPROPERTY.COM
                 </a>
               </div>
             </div>
 
+            {/* Image */}
             <div className="flex justify-center mb-8 md:mb-0 w-full md:w-auto">
               <Image
                 src={assets}
                 alt="Man holding a house"
-                width={700}
-                height={700}
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md"
+                width={950}
+                height={950}
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
               />
             </div>
           </div>

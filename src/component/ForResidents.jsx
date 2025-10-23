@@ -33,35 +33,38 @@ const ForHomeowners = () => {
           ></path>
         </svg>
 
-        <div className="bg-gray-900 h-[860px]">
-          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-50 mx-auto flex flex-col md:flex-row items-center justify-between xl:py-40 lg:py-40 sm:py-20 py-10 gap-6 sm:gap-8 z-20">
+        <div className="bg-gray-900 min-h-[860px]">
+          <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 mx-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 xl:py-40 lg:py-40 sm:py-20 py-10">
+            {/* Image */}
             <div className="flex justify-center mb-6 md:mb-0 w-full md:w-auto">
               <Image
                 src={assets}
                 alt="Man holding a house"
-                width={700}
-                height={700}
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md"
+                width={950}
+                height={950}
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl"
               />
             </div>
 
-            <div className="space-y-4 h-50 max-w-lg w-full">
-              <div className="bg-white shadow-lg p-5 rounded-lg border-l-4 border-blue-900">
-                <h2 className="text-gray-700 font-bold text-xl md:text-3xl">
+            {/* Text Content */}
+            <div className="space-y-4 max-w-lg w-full">
+              {/* Box 1 */}
+              <div className="bg-white shadow-lg p-5 sm:p-6 rounded-lg border-l-4 border-blue-900">
+                <h2 className="text-gray-700 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                   CreditFlow
                 </h2>
-                <p className="text-gray-600 text-base md:text-lg mt-2">
+                <p className="text-gray-600 text-base sm:text-lg md:text-lg mt-2">
                   Establish credit through effortless and adaptable rent
                   transactions
                 </p>
               </div>
 
               {/* Box 2 */}
-              <div className="bg-white shadow-lg p-6 rounded-lg border-l-4 border-blue-900">
-                <h2 className="text-gray-700 font-bold text-xl md:text-3xl">
+              <div className="bg-white shadow-lg p-5 sm:p-6 rounded-lg border-l-4 border-blue-900">
+                <h2 className="text-gray-700 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                   RENT A HOME
                 </h2>
-                <p className="text-gray-600 text-base md:text-lg mt-2">
+                <p className="text-gray-600 text-base sm:text-lg md:text-lg mt-2">
                   Easy and straightforward homes for valued residents
                 </p>
               </div>
@@ -70,13 +73,13 @@ const ForHomeowners = () => {
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
                   href="tel:5104590964"
-                  className="bg-yellow-500 text-white px-5 py-3 rounded-full text-base md:text-lg"
+                  className="bg-yellow-500 text-white px-5 py-3 rounded-full text-base sm:text-lg md:text-lg lg:text-xl"
                 >
                   (510) 459-0964
                 </a>
                 <a
                   href="mailto:INFO@TRUSTPROPERTY.COM"
-                  className="bg-yellow-500 text-white px-5 py-3 rounded-full text-base md:text-lg"
+                  className="bg-yellow-500 text-white px-5 py-3 rounded-full text-base sm:text-lg md:text-lg lg:text-xl"
                 >
                   INFO@TRUSTPROPERTY.COM
                 </a>
